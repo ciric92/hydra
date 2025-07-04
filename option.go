@@ -12,6 +12,7 @@ type Option func(*options)
 
 // WithExtensions sets the config file extensions hydra should support.
 func WithExtensions(exts ...string) Option {
+
 	return func(o *options) {
 		o.supportedExtensions = exts
 	}
